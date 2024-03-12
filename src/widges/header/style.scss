@@ -1,0 +1,11 @@
+header {
+  display: flex;
+  gap: 30px;
+  margin-top: 20px;
+  align-items: end;
+
+  .title {
+    font-size: 1.8rem;
+    transform: translateY(4px);
+  }
+}

@@ -1,0 +1,47 @@
+$bp-mobil: 768px;
+$bp-tablet: 1024px;
+
+:root {
+  --main-color: #000;
+  --invert-main-color: #efefef;
+  --link-color: #444;
+
+  --radius-md: 2px;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: sans-serif;
+}
+
+.page-layout {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+
+  .main-content-block {
+    flex-grow: 1;
+  }
+}
+
+.content-wrapper {
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 40px;
+  box-sizing: border-box;
+
+  @media screen and (max-width: $bp-mobil) {
+    padding: 0 20px;
+  }
+}
+
+.content-container {
+  display: flex;
+  gap: 40px;
+
+  @media screen and (max-width: $bp-mobil) {
+    flex-direction: column;
+  }
+}

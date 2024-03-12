@@ -1,0 +1,35 @@
+nav {
+  border: 1px solid var(--main-color);
+  border-radius: var(--radius-md);
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+
+  .menu-item {
+    position: relative;
+    border-top: 1px solid var(--main-color);
+
+    a {
+      display: block;
+      text-decoration: none;
+      padding: 10px 20px;
+      color: var(--main-color);
+      transition: all ease-in 200ms;
+      border-left: 6px solid transparent;
+
+      &:hover {
+        background-color: var(--invert-main-color);
+      }
+
+    }
+
+    .active {
+      border-left-color: var(--main-color);
+    }
+
+    &:first-child {
+      border-top: none;
+    }
+  }
+}
