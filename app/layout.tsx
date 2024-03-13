@@ -6,6 +6,7 @@ import React, {Suspense} from "react";
 import Loading from "@/app/loading";
 import {Header} from "@/src/widges/header";
 import clsx from "clsx";
+import {Footer} from "@/src/shared/ui/footer";
 
 const font = Commissioner({
     subsets: ["latin", "cyrillic"],
@@ -32,7 +33,7 @@ export default function RootLayout({ children, }: Readonly<{ children: React.Rea
                     {children}
                 </Suspense>
             </div>
-            <footer>footer</footer>
+            <Footer/>
         </body>
     </html>
   );
