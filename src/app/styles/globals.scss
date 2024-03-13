@@ -4,7 +4,7 @@ $bp-tablet: 1024px;
 :root {
   --main-color: #000;
   --invert-main-color: #efefef;
-  --link-color: #444;
+  --link-color: #666;
 
   --bg-overlou: rgba(255, 255, 255, 0.6);
 
@@ -50,5 +50,30 @@ body {
   .content-data {
     flex-grow: 1;
     position: relative;
+  }
+}
+
+h1 {
+  margin-top: 0;
+}
+
+main {
+  a {
+    color: var(--link-color);
+    text-underline-offset: 2px;
+    text-decoration-thickness: 1px;
+    transition: all ease-in 200ms;
+
+    &:active {
+      color: var(--link-color);
+    }
+
+    &:visited {
+      color: var(--link-color);
+    }
+
+    &:hover {
+      color: var(--main-color);
+    }
   }
 }
