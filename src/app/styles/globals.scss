@@ -6,6 +6,8 @@ $bp-tablet: 1024px;
   --invert-main-color: #efefef;
   --link-color: #444;
 
+  --bg-overlou: rgba(255, 255, 255, 0.6);
+
   --radius-md: 2px;
 }
 
@@ -43,5 +45,10 @@ body {
 
   @media screen and (max-width: $bp-mobil) {
     flex-direction: column;
+  }
+
+  .content-data {
+    flex-grow: 1;
+    position: relative;
   }
 }

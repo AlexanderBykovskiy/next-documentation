@@ -29,9 +29,11 @@ export default function RootLayout({ children, }: Readonly<{ children: React.Rea
                 <aside>
                     <MainMenu/>
                 </aside>
-                <Suspense fallback={<Loading/>}>
-                    {children}
-                </Suspense>
+                <div className="content-data">
+                    <Suspense fallback={<Loading/>}>
+                        {children}
+                    </Suspense>
+                </div>
             </div>
             <Footer/>
         </body>

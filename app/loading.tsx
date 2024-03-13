@@ -1,7 +1,9 @@
-const  Loading = () =>  {
-    // You can add any UI inside Loading, including a Skeleton.
+import React from "react";
+import {Loader} from "@/src/shared/ui/loader";
+
+const  Loading: React.FC = () =>  {
     return (
-        <div>loading</div>
+        <Loader/>
     )
 }
 
