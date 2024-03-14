@@ -1,7 +1,9 @@
 import { MDXRemote } from 'next-mdx-remote/rsc'
-import {getMdFile} from "@/src/shared/utils/get-md-file";
+import {getMdFileByUrl} from "@/src/shared/utils/get-md-file-by-url";
+
+
 export default async function HomePage() {
-    const markdown = await getMdFile('http://localhost:3000/docs/1-introduction.ru.md')
+    const markdown = await getMdFileByUrl('/docs/1-introduction.ru.md')
     return (
         <main>
             <MDXRemote source={markdown} />
